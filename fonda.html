@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gran Fonda "El Waton Leo"</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- para que al scrollear no tape texto --> 
+    <style>
+        html {
+            scroll-padding-top: 140px;
+        }
+    </style>
 </head>
 <body>
+<!--navbar-->
+<nav class="navbar bg-danger sticky-top p-3">
+    <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <a class="navbar-brand text-white fw-bold fs-3 text-uppercase" href="#">Fonda Guaton Leo</a>
+        <div class="d-flex flex-column flex-md-row text-center my-3 my-md-0">
+            <a href="#atractivos" class="text-white text-decoration-none fw-bold mx-3 my-1">Atractivos</a>
+            <a href="#Cronograma" class="text-white text-decoration-none fw-bold mx-3 my-1">Cronograma</a>
+            <a href="#Mapa" class="text-white text-decoration-none fw-bold mx-3 my-1">Mapa</a>
+        </div>
 
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search"/>
+            <button class="btn btn-light" type="submit">Buscar</button>
+
+        </form>
+    </div>
+    
+
+</nav>
 
 <!--SECCION 4-->
 
 
 <!--Cronograma--> 
-<div class="container">
+<div id="Cronograma" class="container">
     <!--encabezado-->
     <div class="row text-center fw-bold aling-items-center py-3 m-0" style="background-color: #5D8BB3">
         <div class="col-3">DIA</div>
@@ -51,9 +75,9 @@
     </div>
 
     <!--MAPA-->
-
-    <div class="container text-center my-5" style="max-width: 700px;">
-        <h1 class="fw-bold mb-3" style="color: #D70D00;">¿Como llegar?</h1>
+    
+    <div id="Mapa" class="container text-center my-5 pt-5 mt-5" style="max-width: 700px;">
+        <h1  class="fw-bold mb-3" style="color: #D70D00;">¿Como llegar?</h1>
         <p class="text-secondary fs-5">Estamos ubicados en el centro de la plaza Los Naranjos.</p>
     </div>
 
