@@ -99,12 +99,12 @@
         }
 
         .slide-vertical:nth-child(2) {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/Tejo_-_Rayuela.jpg');
+            background-image: url('https://images.unsplash.com/photo-1624128082323-beb6b8b508db?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             animation-delay: 5s;
         }
 
         .slide-vertical:nth-child(3) {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Trompo.jpg');
+            background-image: url('https://www.tipicochileno.cl/wp-content/uploads/2012/08/El-trompo-L.png');
             animation-delay: 10s;
         }
 
@@ -145,6 +145,8 @@
             <a class="navbar-brand text-white fw-bold fs-3 text-uppercase" href="#">Fonda Guaton Leo</a>
             <div class="d-flex flex-column flex-md-row text-center my-3 my-md-0">
                 <a href="#atractivos" class="text-white text-decoration-none fw-bold mx-3 my-1">Atractivos</a>
+                <a href="#info" class="text-white text-decoration-none fw-bold mx-3 my-1">info</a>
+                <a href="#cards" class="text-white text-decoration-none fw-bold mx-3 my-1">Detalles</a>
                 <a href="#Cronograma" class="text-white text-decoration-none fw-bold mx-3 my-1">Cronograma</a>
                 <a href="#Mapa" class="text-white text-decoration-none fw-bold mx-3 my-1">Mapa</a>
             </div>
@@ -177,7 +179,32 @@
         </div>
     </header>
 
-    <section id="atractivos" class="container my-5 pt-4">
+    <div id="info" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center gx-5">
+            
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="mi-carrusel-vertical rounded-4 shadow-lg border border-3 border-danger">
+                        <div class="slide-vertical"></div>
+                        <div class="slide-vertical"></div>
+                        <div class="slide-vertical"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Información importante</h2>
+                    <p class="fs-5 text-secondary">Te esperamos este 18, 19 y 20 de septiembre en la gran <strong>"Fonda Waton Leo"</strong> con sus ricos terremotos y sus deliciosos choripanes.</p>
+                    <p class="fs-5 text-secondary">Contaremos con guardias de seguridad, amplio estacionamiento, juegos típicos para los más chicos y una tremenda pista de baile para que dejes los pies en la cancha zapateando cueca.</p>
+                    <div class="d-flex align-items-center mt-4 text-danger fw-bold fs-5">
+                        <span class="me-3">Plaza los Naranjos - Punta mira norte</span>
+                        <span>18-20 de Septiembre</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <section id="cards" class="container my-5 pt-4">
         <h2 class="text-center fw-bold mb-5" style="color: #D70D00;">¿Qué encontrarás en nuestra Fonda?</h2>
         
         <div class="row g-4">
@@ -216,31 +243,6 @@
         </div>
     </section>
 
-    <div id="info" class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="row align-items-center gx-5">
-            
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="mi-carrusel-vertical rounded-4 shadow-lg border border-3 border-danger">
-                        <div class="slide-vertical"></div>
-                        <div class="slide-vertical"></div>
-                        <div class="slide-vertical"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold text-primary mb-4">Información importante</h2>
-                    <p class="fs-5 text-secondary">Te esperamos este 18, 19 y 20 de septiembre en la gran <strong>"Fonda Waton Leo"</strong> con sus ricos terremotos y sus deliciosos choripanes.</p>
-                    <p class="fs-5 text-secondary">Contaremos con guardias de seguridad, amplio estacionamiento, juegos típicos para los más chicos y una tremenda pista de baile para que dejes los pies en la cancha zapateando cueca.</p>
-                    <div class="d-flex align-items-center mt-4 text-danger fw-bold fs-5">
-                        <span class="me-3">Plaza los Naranjos - Punta mira norte</span>
-                        <span>18-20 de Septiembre</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
-    
     <div id="Cronograma" class="container mt-5">
         <h2 class="text-center fw-bold mb-4" style="color: #D70D00;">Cronograma de Actividades</h2>
     
@@ -294,6 +296,7 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
+
     <footer class="bg-dark text-white pt-5 pb-4 mt-5">
         <div class="container">
             <div class="row g-4">
@@ -305,7 +308,7 @@
                         La fonda oficial de la familia dieciochera en Punta Mira. Ven a celebrar nuestras Fiestas Patrias con el mejor ambiente, ricas empanadas, terremotos bien servidos y seguridad garantizada.
                     </p>
                     <p class="text-white-50 small">
-                        🇨🇱 ¡Celebremos con orgullo y con ganas!
+                        ¡Celebremos con orgullo y con ganas!
                     </p>
                 </div>
 
@@ -316,6 +319,7 @@
                         <li class="mb-2"><a href="#" class="footer-link">Inicio</a></li>
                         <li class="mb-2"><a href="#atractivos" class="footer-link">Atractivos</a></li>
                         <li class="mb-2"><a href="#info" class="footer-link">Información</a></li>
+                        <li class="mb-2"><a href="#cards" class="footer-link">Detalles</a></li>
                         <li class="mb-2"><a href="#Cronograma" class="footer-link">Cronograma</a></li>
                         <li class="mb-2"><a href="#Mapa" class="footer-link">¿Cómo llegar?</a></li>
                     </ul>
@@ -357,7 +361,7 @@
                     &copy; 2026 <strong>Gran Fonda El Waton Leo</strong>. Todos los derechos reservados.
                 </p>
                 <p class="mb-0">
-                    Sitio web ficticio para fines demostrativos 🇨🇱
+                    Sitio web ficticio para fines demostrativos
                 </p>
             </div>
         </div>
