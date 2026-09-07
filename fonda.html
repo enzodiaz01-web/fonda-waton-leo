@@ -6,6 +6,7 @@
     <title>Gran Fonda "El Waton Leo"</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- carousel -->
     <style>
         html {
             scroll-padding-top: 140px;
@@ -71,99 +72,172 @@
             width: 90%;
         }
     </style>
+
+    <!-- Slide -->
+    <style>
+        .mi-carrusel-vertical {
+            position: relative;
+            height: 450px; 
+            overflow: hidden; 
+            background-color: #000;
+        }
+
+        .slide-vertical {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: slideArriba 15s infinite;
+        }
+
+        .slide-vertical:nth-child(1) {
+            background-image: url('https://www.grupoeducar.cl/wp-content/uploads/2018/09/cueca-1373x700.jpg');
+            animation-delay: 0s;
+        }
+
+        .slide-vertical:nth-child(2) {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/Tejo_-_Rayuela.jpg');
+            animation-delay: 5s;
+        }
+
+        .slide-vertical:nth-child(3) {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Trompo.jpg');
+            animation-delay: 10s;
+        }
+
+        @keyframes slideArriba {
+            0% {
+                top: 100%;
+            }
+            6%, 33% {
+                top: 0%;
+            }
+            39%, 100% {
+                top: -100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<nav class="navbar bg-danger sticky-top p-3">
-    <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <a class="navbar-brand text-white fw-bold fs-3 text-uppercase" href="#">Fonda Guaton Leo</a>
-        <div class="d-flex flex-column flex-md-row text-center my-3 my-md-0">
-            <a href="#atractivos" class="text-white text-decoration-none fw-bold mx-3 my-1">Atractivos</a>
-            <a href="#Cronograma" class="text-white text-decoration-none fw-bold mx-3 my-1">Cronograma</a>
-            <a href="#Mapa" class="text-white text-decoration-none fw-bold mx-3 my-1">Mapa</a>
-        </div>
+    <nav class="navbar bg-danger sticky-top p-3">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <a class="navbar-brand text-white fw-bold fs-3 text-uppercase" href="#">Fonda Guaton Leo</a>
+            <div class="d-flex flex-column flex-md-row text-center my-3 my-md-0">
+                <a href="#atractivos" class="text-white text-decoration-none fw-bold mx-3 my-1">Atractivos</a>
+                <a href="#Cronograma" class="text-white text-decoration-none fw-bold mx-3 my-1">Cronograma</a>
+                <a href="#Mapa" class="text-white text-decoration-none fw-bold mx-3 my-1">Mapa</a>
+            </div>
 
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search"/>
-            <button class="btn btn-light" type="submit">Buscar</button>
-        </form>
-    </div>
-</nav>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search"/>
+                <button class="btn btn-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
 
-<header id="atractivos" class="hero-carousel">
-    <div class="carousel-slide">
-        <div class="carousel-content">
-            <h1 class="display-3 fw-bold text-uppercase">Un espacio para toda la familia</h1>
-            <p class="fs-4">Juegos, áreas verdes y diversión segura.</p>
+    <header id="atractivos" class="hero-carousel">
+        <div class="carousel-slide">
+            <div class="carousel-content">
+                <h1 class="display-3 fw-bold text-uppercase">Un espacio para toda la familia</h1>
+                <p class="fs-4">Juegos, áreas verdes y diversión segura.</p>
+            </div>
         </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="carousel-content">
-            <h1 class="display-3 fw-bold text-uppercase">Comida Deliciosa</h1>
-            <p class="fs-4">Empanadas, anticuchos y terremotos de verdad.</p>
+        <div class="carousel-slide">
+            <div class="carousel-content">
+                <h1 class="display-3 fw-bold text-uppercase">Comida Deliciosa</h1>
+                <p class="fs-4">Empanadas, anticuchos y terremotos de verdad.</p>
+            </div>
         </div>
-    </div>
-    <div class="carousel-slide">
-        <div class="carousel-content">
-            <h1 class="display-3 fw-bold text-uppercase">Bandas Locales</h1>
-            <p class="fs-4">Música en vivo y cueca hasta que las velas no ardan.</p>
+        <div class="carousel-slide">
+            <div class="carousel-content">
+                <h1 class="display-3 fw-bold text-uppercase">Bandas Locales</h1>
+                <p class="fs-4">Música en vivo y cueca hasta que las velas no ardan.</p>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<div id="Cronograma" class="container mt-5">
-    <h2 class="text-center fw-bold mb-4" style="color: #D70D00;">Cronograma de Actividades</h2>
+    <div id="info" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center gx-5">
+            
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="mi-carrusel-vertical rounded-4 shadow-lg border border-3 border-danger">
+                        <div class="slide-vertical"></div>
+                        <div class="slide-vertical"></div>
+                        <div class="slide-vertical"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Información importante</h2>
+                    <p class="fs-5 text-secondary">Te esperamos este 18, 19 y 20 de septiembre en la gran <strong>"Fonda Waton Leo"</strong> con sus ricos terremotos y sus deliciosos choripanes.</p>
+                    <p class="fs-5 text-secondary">Contaremos con guardias de seguridad, amplio estacionamiento, juegos típicos para los más chicos y una tremenda pista de baile para que dejes los pies en la cancha zapateando cueca.</p>
+                    <div class="d-flex align-items-center mt-4 text-danger fw-bold fs-5">
+                        <span class="me-3">Plaza los Naranjos - Punta mira norte</span>
+                        <span>18-20 de Septiembre</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
     
-    <div class="row text-center fw-bold align-items-center py-3 m-0 text-white rounded-top" style="background-color: #5D8BB3">
-        <div class="col-3">DÍA</div>
-        <div class="col-3">HORA</div>
-        <div class="col-3">ACTIVIDAD</div>  
-        <div class="col-3">LUGAR</div>  
-    </div>
+    <div id="Cronograma" class="container mt-5">
+        <h2 class="text-center fw-bold mb-4" style="color: #D70D00;">Cronograma de Actividades</h2>
     
-    <div class="row text-center align-items-center py-3 m-0 border-bottom" style="background-color: #f8f9fa;">
-        <div class="col-3 fw-bold">18 de<br>Septiembre</div>
-        <div class="col-3">12:00 PM</div>
-        <div class="col-3">Inauguración Oficial<br>y pie de cueca</div>
-        <div class="col-3">Escenario<br>Principal</div>
+        <div class="row text-center fw-bold align-items-center py-3 m-0 text-white rounded-top" style="background-color: #5D8BB3">
+            <div class="col-3">DÍA</div>
+            <div class="col-3">HORA</div>
+            <div class="col-3">ACTIVIDAD</div>  
+            <div class="col-3">LUGAR</div>  
+        </div>
+    
+        <div class="row text-center align-items-center py-3 m-0 border-bottom" style="background-color: #f8f9fa;">
+            <div class="col-3 fw-bold">18 de<br>Septiembre</div>
+            <div class="col-3">12:00 PM</div>
+            <div class="col-3">Inauguración Oficial<br>y pie de cueca</div>
+            <div class="col-3">Escenario<br>Principal</div>
+        </div>
+
+        <div class="row text-center align-items-center py-3 m-0 border-bottom" style="background-color: #ffffff;">
+            <div class="col-3 fw-bold">18 de<br>Septiembre</div>
+            <div class="col-3">16:00 PM</div>
+            <div class="col-3">Juegos típicos<br>(Palo ensebado, rayuela)</div>
+            <div class="col-3">Cancha<br>Trasera</div>
+        </div>
+
+        <div class="row text-center align-items-center py-3 m-0 border-bottom" style="background-color: #f8f9fa;">
+            <div class="col-3 fw-bold">19 de<br>Septiembre</div>
+            <div class="col-3">21:00 PM</div>
+            <div class="col-3">Show de Banda<br>Cumbia Tropical</div>
+            <div class="col-3">Escenario<br>Principal</div>
+        </div>
+
+        <div class="row text-center align-items-center py-3 m-0 shadow-sm rounded-bottom" style="background-color: #ffffff;">
+            <div class="col-3 fw-bold">20 de<br>Septiembre</div>
+            <div class="col-3">18:00 PM</div>
+            <div class="col-3">Gran remate de<br>fondas y cierre</div>
+            <div class="col-3">Patio Central</div>
+        </div>
     </div>
 
-    <div class="row text-center align-items-center py-3 m-0 border-bottom" style="background-color: #ffffff;">
-        <div class="col-3 fw-bold">18 de<br>Septiembre</div>
-        <div class="col-3">16:00 PM</div>
-        <div class="col-3">Juegos típicos<br>(Palo ensebado, rayuela)</div>
-        <div class="col-3">Cancha<br>Trasera</div>
+    <div id="Mapa" class="container text-center my-5 pt-5">
+        <h1 class="fw-bold mb-3" style="color: #D70D00;">¿Cómo llegar?</h1>
+        <p class="text-secondary fs-5">Estamos ubicados en el centro de la plaza Los Naranjos.</p>
     </div>
 
-    <div class="row text-center align-items-center py-3 m-0 border-bottom" style="background-color: #f8f9fa;">
-        <div class="col-3 fw-bold">19 de<br>Septiembre</div>
-        <div class="col-3">21:00 PM</div>
-        <div class="col-3">Show de Banda<br>Cumbia Tropical</div>
-        <div class="col-3">Escenario<br>Principal</div>
+    <div class="ratio ratio-16x9 shadow rounded-4 overflow-hidden mb-5 mx-auto" style="max-width: 800px;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.879853162652!2d-71.32353235656348!3d-29.99323865205537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691c9003025e1fb%3A0xf2f46ce1423f05ae!2sPlaza%20Los%20Naranjos%20-%20Circuito%20CALISTENIA!5e0!3m2!1ses!2scl!4v1788396554406!5m2!1ses!2scl"
+            class="border-0"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
-
-    <div class="row text-center align-items-center py-3 m-0 shadow-sm rounded-bottom" style="background-color: #ffffff;">
-        <div class="col-3 fw-bold">20 de<br>Septiembre</div>
-        <div class="col-3">18:00 PM</div>
-        <div class="col-3">Gran remate de<br>fondas y cierre</div>
-        <div class="col-3">Patio Central</div>
-    </div>
-</div>
-
-<div id="Mapa" class="container text-center my-5 pt-5">
-    <h1 class="fw-bold mb-3" style="color: #D70D00;">¿Cómo llegar?</h1>
-    <p class="text-secondary fs-5">Estamos ubicados en el centro de la plaza Los Naranjos.</p>
-</div>
-
-<div class="ratio ratio-16x9 shadow rounded-4 overflow-hidden mb-5 mx-auto" style="max-width: 800px;">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.879853162652!2d-71.32353235656348!3d-29.99323865205537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691c9003025e1fb%3A0xf2f46ce1423f05ae!2sPlaza%20Los%20Naranjos%20-%20Circuito%20CALISTENIA!5e0!3m2!1ses!2scl!4v1788396554406!5m2!1ses!2scl"
-        class="border-0"
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
 
 </body>
 </html>
