@@ -119,6 +119,23 @@
                 top: -100%;
             }
         }
+        .card-atractivo {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-atractivo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+        }
+        .footer-link {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.2s ease, padding-left 0.2s ease;
+            display: inline-block;
+        }
+        .footer-link:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
     </style>
 </head>
 <body>
@@ -159,6 +176,45 @@
             </div>
         </div>
     </header>
+
+    <section id="atractivos" class="container my-5 pt-4">
+        <h2 class="text-center fw-bold mb-5" style="color: #D70D00;">¿Qué encontrarás en nuestra Fonda?</h2>
+        
+        <div class="row g-4">
+            <!-- Tarjeta 1: Comida -->
+            <div class="col-md-4">
+                <div class="card h-100 card-atractivo border-0 shadow-sm rounded-4 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1624128082323-beb6b8b508db?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Comida Típica" style="height: 220px; object-fit: cover;">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title fw-bold text-dark">Gastronomía Típica</h4>
+                        <p class="card-text text-secondary mt-3">Disfruta de las mejores empanadas de pino, sabrosos choripanes, jugosos anticuchos y el clásico e infaltable terremoto para refrescar la garganta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Juegos -->
+            <div class="col-md-4">
+                <div class="card h-100 card-atractivo border-0 shadow-sm rounded-4 overflow-hidden">
+                    <img src="https://www.tipicochileno.cl/wp-content/uploads/2012/08/El-trompo-L.png" class="card-img-top" alt="Juegos Criollos" style="height: 220px; object-fit: cover;">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title fw-bold text-dark">Juegos Criollos</h4>
+                        <p class="card-text text-secondary mt-3">Diviértete en familia y pon a prueba tu destreza con nuestros juegos tradicionales: tiro al blanco, palo ensebado, la clásica rayuela y la pesca milagrosa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Baile -->
+            <div class="col-md-4">
+                <div class="card h-100 card-atractivo border-0 shadow-sm rounded-4 overflow-hidden">
+                    <img src="https://www.grupoeducar.cl/wp-content/uploads/2018/09/cueca-1373x700.jpg" class="card-img-top" alt="Música en Vivo" style="height: 220px; object-fit: cover;">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title fw-bold text-dark">Música y Baile</h4>
+                        <p class="card-text text-secondary mt-3">¡Zapatea hasta que las velas no ardan! Contamos con amplia pista de baile, bandas de cumbia tropical en vivo y cueca brava toda la noche.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="info" class="py-5 bg-white">
         <div class="container py-4">
@@ -238,6 +294,73 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Columna 1: Sobre la fonda -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold text-uppercase mb-3 text-danger">Fonda Guatón Leo</h4>
+                    <p class="text-secondary">
+                        La fonda oficial de la familia dieciochera en Punta Mira. Ven a celebrar nuestras Fiestas Patrias con el mejor ambiente, ricas empanadas, terremotos bien servidos y seguridad garantizada.
+                    </p>
+                    <p class="text-white-50 small">
+                        🇨🇱 ¡Celebremos con orgullo y con ganas!
+                    </p>
+                </div>
 
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">Inicio</a></li>
+                        <li class="mb-2"><a href="#atractivos" class="footer-link">Atractivos</a></li>
+                        <li class="mb-2"><a href="#info" class="footer-link">Información</a></li>
+                        <li class="mb-2"><a href="#Cronograma" class="footer-link">Cronograma</a></li>
+                        <li class="mb-2"><a href="#Mapa" class="footer-link">¿Cómo llegar?</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Horarios de atención -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Horarios</h5>
+                    <p class="text-secondary mb-1"><strong>18 de Septiembre:</strong> 12:00 PM – 04:00 AM</p>
+                    <p class="text-secondary mb-1"><strong>19 de Septiembre:</strong> 11:00 AM – 04:00 AM</p>
+                    <p class="text-secondary mb-3"><strong>20 de Septiembre:</strong> 11:00 AM – 22:00 PM</p>
+                    <span class="badge bg-danger p-2">¡Entrada Liberada hasta las 18:00 hrs!</span>
+                </div>
+
+                <!-- Columna 4: Contacto ficticio -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2">
+                            <strong>Ubicación:</strong><br>
+                            Plaza Los Naranjos, Punta Mira Norte, Coquimbo.
+                        </li>
+                        <li class="mb-2">
+                            <strong>Teléfono / WhatsApp:</strong><br>
+                            <a href="tel:+56912345678" class="footer-link">+56 9 4587 2754</a>
+                        </li>
+                        <li class="mb-2">
+                            <strong>Correo:</strong><br>
+                            <a href="mailto:contacto@fondawatonleo.cl" class="footer-link">contacto@fondawatonleo.cl</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Línea divisoria y Copyright -->
+            <div class="border-top border-secondary mt-4 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+                <p class="mb-2 mb-md-0">
+                    &copy; 2026 <strong>Gran Fonda El Waton Leo</strong>. Todos los derechos reservados.
+                </p>
+                <p class="mb-0">
+                    Sitio web ficticio para fines demostrativos 🇨🇱
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
